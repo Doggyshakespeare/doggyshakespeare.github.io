@@ -1,0 +1,32 @@
+---
+layout: default
+title: Slide Rule Demo
+---
+<script>
+  $(function() {
+    $("#sr_s").draggable({axis: "x"});
+    $("#sr_l").draggable({axis: "x"});
+  });
+
+  $(document).ready(function() {
+    $("#sr_flip").click(function() {
+      $(".sr_img").toggle();
+    });
+  });
+</script>
+<div class="content">
+  <div id="sr_l" style="width:5.15%; margin-bottom:-38.5%">
+      <img src="sr_l.png" style="width:100%">
+  </div>
+  <img src="sr_a.png" class="sr_img">
+  <img src="sr_d.png" class="sr_img" style="display:none">
+  <div class="sr" id="sr_s">
+    <img src="sr_b.png" class="sr_img">
+    <img src="sr_e.png" class="sr_img" style="display:none">
+  </div>
+  <img src="sr_c.png" class="sr_img">
+  <img src="sr_f.png" class="sr_img" style="display:none">
+  <button id="sr_flip">
+      Flip Slide Rule
+  </button>
+</div>
