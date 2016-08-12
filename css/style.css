@@ -83,6 +83,8 @@ table {
 .dl_img {
   margin: auto;
   width: 40%;
+  border: 1px;
+  border-style: solid;
 }
 
 #sr_flip {
