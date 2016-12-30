@@ -4,27 +4,46 @@ title: Slide Rule Demo
 ---
 <script>
   $(function() {
-    $("#sr_s").draggable({axis: "x"});
-    $("#sr_l").draggable({axis: "x"});
+    $("#sr_M_s").draggable({axis: "x"});
+    $("#sr_F_s").draggable({axis: "x"});
+    $(".sr_l").draggable({axis: "x"});
   });
 
   $(document).ready(function() {
-    $("#sr_flip").click(function() {
-      $(".sr_img").toggle();
+    $("#sr_M_flip").click(function() {
+      $(".sr_M_img").toggle();
+    });
+    $("#sr_F_flip").click(function() {
+      $(".sr_F_img").toggle();
     });
   });
 </script>
-<div id="sr_l" style="width:5.15%; margin-bottom:-38.5%">
+<div class="sr_l" style="width:5.15%; margin-bottom:-38.5%">
     <img src="img/sr_l.png" style="width:100%">
 </div>
-<img src="img/sr_M_a.png" class="sr_img">
-<img src="img/sr_M_d.png" class="sr_img" style="display:none">
-<div class="sr" id="sr_s">
-  <img src="img/sr_M_b.png" class="sr_img">
-  <img src="img/sr_M_e.png" class="sr_img" style="display:none">
+<img src="img/sr_M_a.png" class="sr_M_img">
+<img src="img/sr_M_d.png" class="sr_M_img" style="display:none">
+<div class="sr" id="sr_M_s">
+  <img src="img/sr_M_b.png" class="sr_M_img">
+  <img src="img/sr_M_e.png" class="sr_M_img" style="display:none">
 </div>
-<img src="img/sr_M_c.png" class="sr_img">
-<img src="img/sr_M_f.png" class="sr_img" style="display:none">
-<button id="sr_flip">
+<img src="img/sr_M_c.png" class="sr_M_img">
+<img src="img/sr_M_f.png" class="sr_M_img" style="display:none">
+<button id="sr_M_flip">
+    Flip Slide Rule
+</button>
+
+<div class="sr_l" style="width:5.15%; margin-bottom:-38.5%">
+    <img src="img/sr_l.png" style="width:100%">
+</div>
+<img src="img/sr_F_a.png" class="sr_F_img">
+<img src="img/sr_F_d.png" class="sr_F_img" style="display:none">
+<div class="sr" id="sr_F_s">
+  <img src="img/sr_M_b.png" class="sr_F_img">
+  <img src="img/sr_M_e.png" class="sr_F_img" style="display:none">
+</div>
+<img src="img/sr_M_c.png" class="sr_F_img">
+<img src="img/sr_M_f.png" class="sr_F_img" style="display:none">
+<button id="sr_F_flip">
     Flip Slide Rule
 </button>
