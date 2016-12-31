@@ -3,29 +3,27 @@ layout: default
 title: Slide Rule Demo
 ---
 <script>
-  $(function() {
-    $("#sr_M_s").draggable({axis: "x"});
-    $("#sr_F_s").draggable({axis: "x"});
-    $(".sr_l").draggable({axis: "x"});
-  });
-
-  $(document).ready(function() {
-    $("#sr_M_flip").click(function() {
-      $(".sr_M_img").toggle();
+    $(function() {
+        $(".sr").draggable({axis: "x"});
+        $(".sr_l").draggable({axis: "x"});
     });
-    $("#sr_F_flip").click(function() {
-      $(".sr_F_img").toggle();
+    $(document).ready(function() {
+        $("#sr_M_flip").click(function() {
+            $(".sr_M_img").toggle();
+        });
+        $("#sr_F_flip").click(function() {
+            $(".sr_F_img").toggle();
+        });
     });
-  });
 </script>
 
 <div class="sr_ujo">
     <div class="sr_l" style="width:5.15%; margin-bottom:-38.5%">
-        <img src="img/sr_l.png" style="width:100%">
+        <img src="img/sr_M_l.png" style="width:100%">
     </div>
     <img src="img/sr_M_a.png" class="sr_M_img">
     <img src="img/sr_M_d.png" class="sr_M_img" style="display:none">
-    <div class="sr" id="sr_M_s">
+    <div class="sr">
         <img src="img/sr_M_b.png" class="sr_M_img">
         <img src="img/sr_M_e.png" class="sr_M_img" style="display:none">
     </div>
@@ -37,12 +35,12 @@ title: Slide Rule Demo
 </div>
 
 <div class="sr_ujo">
-    <div class="sr_l" style="width:5.15%; margin-bottom:-38.5%">
-        <img src="img/sr_l.png" style="width:100%">
+    <div class="sr_l" style="width:5.15%; margin-bottom:-30%">
+        <img src="img/sr_F_l.png" style="width:100%">
     </div>
     <img src="img/sr_F_a.png" class="sr_F_img">
     <img src="img/sr_F_d.png" class="sr_F_img" style="display:none">
-    <div class="sr" id="sr_F_s">
+    <div class="sr">
         <img src="img/sr_F_b.png" class="sr_F_img">
         <img src="img/sr_F_e.png" class="sr_F_img" style="display:none">
     </div>
