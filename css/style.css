@@ -16,6 +16,14 @@ div {
   text-align: left;
 }
 
+.full {
+  border: 0px;
+  width: 100%;
+  height: 640px;
+  padding: 20px 0px 10px 0px;
+  display: block;
+}
+
 .title {
   font-size: 4em;
   font-family: cursive, serif;
